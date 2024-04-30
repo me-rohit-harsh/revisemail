@@ -262,7 +262,7 @@ button:hover {
 }
 
 .contact-info {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     padding: var(--padding-footer);
     display: grid;
     background-color: var(--primary-color-dark-blue-3);
@@ -291,6 +291,7 @@ button:hover {
 
 footer p {
     padding: 0;
+    margin-left: 2rem;
 }
 
 .img-footer {
