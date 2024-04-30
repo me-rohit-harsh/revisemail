@@ -293,7 +293,9 @@ footer p {
     padding: 0;
     margin-left: 2rem;
 }
-
+.contact-info-logo{
+    margin-left: 2rem;
+}
 .img-footer {
     margin-right: 1rem;
     width: 18px;
@@ -358,7 +360,9 @@ footer i {}
     header {
         padding: var(--padding-sm);
     }
-
+.testimonial{
+    padding: 0;
+}
     header img,
     footer img {
         width: 117px;
