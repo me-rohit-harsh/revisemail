@@ -11,8 +11,8 @@
     --padding-sm: 2.5rem 2rem;
     --padding-md: 1rem;
     --padding-lg: 4.5rem 4rem;
-    --padding-footer: 15rem 4rem 1rem;
-    --padding-footer-tablet: 20rem 3rem 1rem;
+    --padding-footer: 10rem 4rem 1rem;
+    --padding-footer-tablet: 30rem 3rem 1rem;
     --padding-footer-mobile: 25rem 3rem 1rem;
 }
 
@@ -266,11 +266,11 @@ button:hover {
 .contact-info {
     /* margin-top: 50px; */
     padding: var(--padding-footer);
-    display: grid;
+    /* display: grid; */
     background-color: var(--primary-color-dark-blue-3);
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: "logo logo logo logo""location contacts links social""attribution attribution attribution attribution";
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-rows: repeat(2, auto); */
+    /* grid-template-areas: "logo logo logo logo""location contacts links social""attribution attribution attribution attribution"; */
 }
 
 .contact-info>div,
@@ -477,6 +477,8 @@ footer i {}
     border: 1px solid #e5e5e5;
     z-index: 0;
     margin-bottom: 30px;
+    background-color: #202A3C;
+     box-shadow: 2px 2px 20px 2px var(--primary-color-dark-blue-3);
 }
 
 .pricing-table-5:after {
