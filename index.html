@@ -4,7 +4,7 @@
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Revise Mail</title>
+    <title>Revise Mail || Web Mail Service</title>
     <!-- Bootstrap CSS -->
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'>
     <!-- Font Awesome CSS -->
@@ -15,17 +15,15 @@
 
 <body>
     <header>
-        <div class="logo-container"><img
-                src="assets/logo.png" width="100"
-                alt="logo-img"></div>
+            <div class="logo-container"><a href="/"><img src="assets/logo.png" width="100" alt="logo-img"></a></div>
+
         <nav class="nav-bar">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Sign In</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Sign In</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#testimonial">Testimonials</a></li>
+                <li><a href="#feature">Features</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                
             </ul>
         </nav>
     
@@ -38,9 +36,9 @@
                     src="assets/home.png"
                     alt="illustration-intro"></div>
             <div class="intro-content">
-                <h1> All your files in one secure location, accessible anywhere.</h1>
+            <a href="signin.html"><h1> All your files in one secure location, accessible anywhere.</h1></a>
     
-                <p class="lg-p mt-2">Fylo stores all your most important files in one secure location. Access them wherever
+                <p class="lg-p mt-2">Revise stores all your most important files in one secure location. Access them wherever
                     you need, share and collaborate with friends family, and co-workers.
                 </p>
                 <button class="btn mt-2"> Get Started</button>
@@ -48,12 +46,12 @@
     
     
         </section>
+        <h1 class="text-center mt-5" id="feature">Features</h1>
+        <hr>
         <section class="features">
-    
+   
             <div class="features-item">
-                <div class="features-item-head"> <img
-                        src="https://hannahshiels.github.io/front-end-mentor/fylo-dark-theme-landing-page-master/images/icon-access-anywhere.svg"
-                        alt=""> </div>
+                <div class="features-item-head"><i class="fa-solid fa-file-zipper fa-5x" style="color: #F3D33F;"></i></div>
                 <div class="features-item-body  mt-2">
                     <h3>Access your files, anywhere</h3>
     
@@ -63,9 +61,7 @@
             </div>
     
             <div class="features-item">
-                <div class="features-item-head"> <img
-                        src="https://hannahshiels.github.io/front-end-mentor/fylo-dark-theme-landing-page-master/images/icon-security.svg"
-                        alt=""> </div>
+                <div class="features-item-head"> <i class="fa-solid fa-shield fa-5x" style="color: #F3D33F;"></i> </div>
                 <div class="features-item-body mt-2">
                     <h3> Security you can trust</h3>
                     <p> 2-factor authentication and user-controlled encryption are just a couple of the security features we
@@ -74,9 +70,7 @@
     
             </div>
             <div class="features-item">
-                <div class="features-item-head"> <img
-                        src="https://hannahshiels.github.io/front-end-mentor/fylo-dark-theme-landing-page-master/images/icon-collaboration.svg"
-                        alt=""> </div>
+                <div class="features-item-head"><i class="fa-solid fa-circle-check fa-5x" style="color: #F3D33F;"></i></div>
                 <div class="features-item-body  mt-2">
                     <h3> Real-time collaboration</h3>
                     <p> Securely share files and folders with friends, family and colleagues for live collaboration. No
@@ -84,7 +78,7 @@
                 </div>
     
             </div>
-            <div class="features-item">
+            <!-- <div class="features-item">
                 <div class="features-item-head"> <img
                         src="https://hannahshiels.github.io/front-end-mentor/fylo-dark-theme-landing-page-master/images/icon-any-file.svg"
                         alt=""> </div>
@@ -93,11 +87,11 @@
                     <p> Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file
                         types to be securely stored and shared.</p>
                 </div>
-            </div>
+            </div> -->
         </section>
         <section class="productive">
             <div class="productive-img"> <img
-                    src="https://hannahshiels.github.io/front-end-mentor/fylo-dark-theme-landing-page-master/images/illustration-stay-productive.png"
+                    src="assets/work.png" 
                     alt=""> </div>
     
             <div class="productive-content">
@@ -110,16 +104,17 @@
                 <p class="lg-p"> Securely share files and folders with friends, family and colleagues for live
                     collaboration. No email attachments required.
                 </p>
-                <p class="lg-p"> <a class="content-link" href="#">See how Fylo works <i
+                <p class="lg-p"> <a class="content-link" href="#">See how Revise works <i
                             class="fas fa-arrow-alt-circle-right"></i></a> </p>
             </div>
         </section>
-    
+    <h1 class="text-center mt-5" id="testimonial">Testimonials</h1>
+    <hr>
         <section class="testimonial">
     
             <div class="testimonial-item">
                 <div class="testimonial-item-text">
-                    <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team
+                    <p>Revise has improved our team productivity by an order of magnitude. Since making the switch our team
                         has become a well-oiled collaboration machine.</p>
                 </div>
                 <div class="testimonial-item-reviewer">
@@ -136,7 +131,7 @@
     
             <div class="testimonial-item">
                 <div class="testimonial-item-text">
-                    <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team
+                    <p>Revise has improved our team productivity by an order of magnitude. Since making the switch our team
                         has become a well-oiled collaboration machine.</p>
                 </div>
                 <div class="testimonial-item-reviewer">
@@ -152,7 +147,7 @@
     
             <div class="testimonial-item">
                 <div class="testimonial-item-text">
-                    <p> Fylo has improved our team productivity by an order of magnitude. Since making the switch our team
+                    <p> Revise has improved our team productivity by an order of magnitude. Since making the switch our team
                         has become a well-oiled collaboration machine.</p>
                 </div>
                 <div class="testimonial-item-reviewer">
@@ -239,8 +234,7 @@
             </div> -->
             <div class="attribution-container">
                 <p class="attribution">
-                    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-                    Coded by <a href="https://codepen.io/devhannah">Hannah</a>.
+                Revise Mail 2024 - Present. All Rights Reserved.
                 </p>
             </div>
     

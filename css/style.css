@@ -3,8 +3,8 @@
     --primary-color-dark-blue-2: hsl(218, 28%, 13%);
     --primary-color-dark-blue-3: hsl(216, 53%, 9%);
     --primary-color-dark-blue-4: hsl(219, 30%, 18%);
-    --accent-color-cyan: hsl(176, 68%, 64%);
-    --accent-color-blue: hsl(198, 60%, 50%);
+    --accent-color-cyan: #e4d695;
+    --accent-color-blue: #F3D33F;
     --neutral-color-white: hsl(0, 0%, 100%);
     --font-heading: "Raleway", sans-serif;
     --font-body: "Open Sans", sans-serif;
@@ -77,12 +77,17 @@ header {
 .nav-bar ul li {
     display: inline-block;
     margin-right: 1rem;
+    color: #F3D33F;
 }
 .nav-bar ul{
     margin: 0;
 }
-a:hover {
+a{
+    text-decoration: none;
     color: var(--accent-color-cyan);
+}
+a:hover {
+    color: #fff;
     transition: 600ms;
 }
 
@@ -90,11 +95,17 @@ section {
     padding: var(--padding-lg);
 }
 
-.intro img,
-.productive img {
+.intro img
+ {
     width: 100%;
     max-width: 300px;
     height: auto;
+}
+
+.productive img{
+       width: 100%;
+       max-width: 500px;
+       height: auto;
 }
 
 .intro {
@@ -251,7 +262,7 @@ button:hover {
 }
 
 .contact-info {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     padding: var(--padding-footer);
     display: grid;
     background-color: var(--primary-color-dark-blue-3);
@@ -280,6 +291,7 @@ button:hover {
 
 footer p {
     padding: 0;
+    margin-left: 2rem;
 }
 
 .img-footer {
@@ -311,7 +323,7 @@ footer p {
 }
 
 .contact-info-links-list li {
-    margin-bottom: 1.5rem;
+    margin-bottom: .5rem;
 }
 
 .contact-info-social-links {
@@ -340,14 +352,7 @@ footer i {}
     grid-area: attribution;
 }
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
 
 @media (max-width: 1000px) {
     header {
