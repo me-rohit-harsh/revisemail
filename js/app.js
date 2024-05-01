@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // testimonails js section ends 
-
+// footer part js subscription starts
 document.addEventListener("DOMContentLoaded", () => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -95,9 +95,26 @@ document.addEventListener("DOMContentLoaded", () => {
     }, {
         threshold: 0.3
     }); // Adjust if you want it to trigger earlier or later
-
+    
     document.querySelectorAll('.cta-item[data-animate]').forEach(item => {
         observer.observe(item);
     });
 });
-
+// footer part js subscription ends
+// Auth Page Animation starts 
+document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('jbrwe-visible');
+            }
+        });
+    }, {
+        threshold: 0.1
+    }); // Trigger when half of the element is visible
+    
+    document.querySelectorAll('[data-animate]').forEach(item => {
+        observer.observe(item);
+    });
+    // Auth Page Animation ends
+});
