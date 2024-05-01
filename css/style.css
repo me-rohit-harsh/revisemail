@@ -338,13 +338,14 @@ button:hover {
 
 .testimonial-item-reviewer {
     display: flex;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
 }
 
 .testimonial-item-reviewer img {
     border-radius: 50%;
     height: 50px;
     width: 50px;
+    margin-top: 5px;
 }
 
 .cta {
@@ -809,7 +810,11 @@ footer i {}
      transform: translateY(0);
      /* Move to final position */
  }
-
+.testimonial-item-reviewer-text p,
+.testimonial-item-reviewer-text h4{
+    margin-bottom: 0px !important;
+    line-height: normal;
+}
  /* footer section css ends  */
 
  
