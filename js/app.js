@@ -41,8 +41,9 @@ function register(event) {
 
 
 AOS.init({
-    duration: 1200, // values from 0 to 3000, with step 50ms
-    once: false, // whether animation should happen only once - while scrolling down
-    startEvent: 'load'
+    duration: 1200, // Animation duration
+    easing: 'ease-in-out', // Easing function for the animation
+    once: false, // Whether animation should only occur once
+    delay: 100, // Delay in animation start
 });
 
