@@ -197,30 +197,32 @@
                             </div>
                         </div> -->
             </section>
-            <section class="productive pt-0">
-                <div class="productive-img"> <img src="assets/work.png" alt=""> </div>
-
-                <div class="productive-content">
-
-                    <h2>Stay productive, wherever you are</h2>
-
-                    <p class="lg-p"> Never let location be an issue when accessing your files. Fylo has you covered for
-                        all of
-                        your file storage needs. </p>
-
-                    <p class="lg-p"> Securely share files and folders with friends, family and colleagues for live
-                        collaboration. No email attachments required.
-                    </p>
-                    <p class="lg-p"> <a class="content-link" href="#">See how Revise works <i
-                                class="fas fa-arrow-alt-circle-right"></i></a> </p>
+            <section class="productive pt-0" id="productive-section">
+                <div class="productive-wrapper">
+                    <div class="productive-img" id="productive-img">
+                        <img src="assets/work.png" alt="">
+                    </div>
+                    <div class="productive-content">
+                        <h2>Stay productive, wherever you are</h2>
+                        <p class="lg-p">Never let location be an issue when accessing your files. Fylo has you covered
+                            for all of
+                            your file storage needs.</p>
+                        <p class="lg-p">Securely share files and folders with friends, family and colleagues for live
+                            collaboration.
+                            No email attachments required.</p>
+                        <p class="lg-p"><a class="content-link" href="#">See how Revise works <i
+                                    class="fas fa-arrow-alt-circle-right"></i></a></p>
+                    </div>
                 </div>
             </section>
+
         </div>
         <h1 class="text-center mt-5" id="testimonial">Testimonials</h1>
         <hr>
         <section class="testimonial">
 
-            <div class="testimonial-item">
+            <div class="testimonial-item" data-animate>
+
                 <div class="testimonial-item-text">
                     <p>Revise has improved our team productivity by an order of magnitude. Since making the switch our
                         team
@@ -238,7 +240,8 @@
             </div>
 
 
-            <div class="testimonial-item">
+            <div class="testimonial-item" data-animate>
+
                 <div class="testimonial-item-text">
                     <p>Revise has improved our team productivity by an order of magnitude. Since making the switch our
                         team
@@ -255,7 +258,8 @@
                 </div>
             </div>
 
-            <div class="testimonial-item">
+            <div class="testimonial-item" data-animate>
+
                 <div class="testimonial-item-text">
                     <p> Revise has improved our team productivity by an order of magnitude. Since making the switch our
                         team
@@ -273,22 +277,21 @@
             </div>
         </section>
 
-        <section class="cta">
+<section class="cta">
+    <div class="cta-item" data-animate>
+        <div class="cta-text">
+            <h2>Get early access today</h2>
+            <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+                questions, our support team would be happy to help you.</p>
+        </div>
+        <form class="cta-form mt-2" action="">
+            <input required class="input-block" type="text" placeholder="example@email.com" id="email_id">
+            <button class="btn-block" type="submit">Get Started For Free</button>
+        </form>
+    </div>
+</section>
 
-            <div class="cta-item">
-                <div class="cta-text">
-                    <h2>Get early access today </h2>
-                    <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have
-                        any
-                        questions, our support team would be happy to help you.</p>
-                </div>
-                <form class="cta-form mt-2" action="">
-                    <input required class="input-block" type="text" placeholder="example@email.com" id="email_id">
-                    <button class="btn-block" onclick="return emailSubmition(event)">Get
-                        Started For Free</button>
-                </form>
-            </div>
-        </section>
+
     </main>
     <footer>
         <section class="contact-info">

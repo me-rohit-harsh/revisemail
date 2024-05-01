@@ -713,3 +713,102 @@ footer i {}
 .pricing-table-5 .price-body ul li:last-child {
     margin-bottom: 0;
 }
+
+/* productive part css starts  */
+.productive-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    /* Image on the right by default */
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    /* Ensures elements don't show outside bounds during animation */
+}
+
+.productive-img,
+.productive-content {
+    transition: transform 1s ease, opacity 1s ease;
+    opacity: 0;
+    /* Start both elements as invisible */
+}
+
+/* Default state for larger screens */
+@media (min-width: 768px) {
+    .productive-img {
+        transform: translateX(-100%);
+        /* Start image off-screen to the left */
+    }
+
+    .productive-content {
+        transform: translateX(100%);
+        /* Start text off-screen to the right */
+    }
+
+    /* When elements are in view, move them to their final position */
+    .productive-img.move-right,
+    .productive-content.move-right {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 767px) {
+    .productive-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .productive-img,
+    .productive-content {
+        transform: translateY(20px);
+        /* Start slightly lower for a subtle rise effect */
+    }
+
+    /* Animate into final positions */
+    .productive-img.move-right,
+    .productive-content.move-right {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+ /* productive part css ends  */
+
+ /* Testimonials section css starts for animaion  */
+
+ .testimonial-item {
+     opacity: 0;
+     /* Start fully transparent */
+     transform: translateY(50px);
+     /* Start slightly below their final position */
+     transition: opacity 1s ease-out, transform 1s ease-out;
+     /* Smooth transition for both properties */
+ }
+
+ .is-visible {
+     opacity: 1;
+     /* Fully visible */
+     transform: translateY(0);
+     /* Move to final position */
+ }
+
+ /* Testimonials section css ends for animaion  */
+
+ /* footer section css starts  */
+ .cta-item {
+     opacity: 0;
+     /* Start fully transparent */
+     transform: translateY(50px);
+     /* Start slightly below their final position */
+     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+     /* Smooth transition for both properties */
+ }
+
+ .is-visible {
+     opacity: 1;
+     /* Fully visible */
+     transform: translateY(0);
+     /* Move to final position */
+ }
+
+
+ /* footer section css ends  */
