@@ -15,7 +15,7 @@ function login(e) {
     var password = document.getElementById("login_password");
     var username = document.getElementById("login_username");
     if (password.value !== '' && username.value !== '') {
-        alertBox.innerHTML = "  Inncorrect Credentials! "
+        alertBox.innerHTML = "  Incorrect Credentials! "
         alertBox.classList.remove("d-none");
         password.value = '';
         username.value = '';
@@ -38,3 +38,11 @@ function register(event) {
         alertBoxR.innerHTML = "Fil in all the details";
     }
 }
+
+
+AOS.init({
+    duration: 1200, // values from 0 to 3000, with step 50ms
+    once: false, // whether animation should happen only once - while scrolling down
+    startEvent: 'load'
+});
+

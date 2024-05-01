@@ -67,9 +67,127 @@ a {
     padding: var(--padding-md);
     justify-content: space-between;
 } */
- .navbar-nav .nav-link {
-     transition: transform 0.3s ease-in-out;
- }
+
+/* navbar animation css starts */
+/* Fade-in animation for the entire navbar */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.navbar {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Scale animation for navbar links */
+.navbar-nav .nav-link {
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+/* Pulse animation for the navbar brand logo */
+.navbar-brand {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.intro-img {
+    height: 300px !important;
+}
+
+/* Home secation css animation starts  */
+.intro-img img {
+    width: 100%;
+    animation: expandWidth 1.5s ease-out forwards;
+}
+
+@keyframes expandWidth {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.intro-content>* {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.intro-content .intro-title {
+    animation-delay: 0.5s;
+}
+
+.intro-content .lg-p {
+    animation-delay: 1s;
+}
+
+.intro-content .btn-animate {
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* pricing table css starts  */
+.pricing-table-5 .title {
+    transition: color 0.3s ease;
+}
+
+.pricing-table-5:hover .title {
+    color: #007bff;
+    /* Change color on hover */
+}
+
+.pricing-table-5 .price {
+    transition: transform 0.3s ease-in-out;
+}
+
+.pricing-table-5:hover .price {
+    transform: scale(1.1);
+    /* Scale effect on hover */
+}
+
+
+.navbar-nav .nav-link {
+    transition: transform 0.3s ease-in-out;
+}
+
 .nav-bar {
     display: flex;
     justify-content: center;
@@ -81,13 +199,16 @@ a {
     margin-right: 1rem;
     color: #F3D33F;
 }
-.nav-bar ul{
+
+.nav-bar ul {
     margin: 0;
 }
-a{
+
+a {
     text-decoration: none;
     color: var(--accent-color-cyan);
 }
+
 a:hover {
     color: #fff;
     transition: 600ms;
@@ -97,17 +218,16 @@ section {
     padding: var(--padding-lg);
 }
 
-.intro img
- {
+.intro img {
     width: 100%;
     max-width: 300px;
     height: auto;
 }
 
-.productive img{
-       width: 100%;
-       max-width: 500px;
-       height: auto;
+.productive img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
 
 .intro {
@@ -295,9 +415,11 @@ footer p {
     padding: 0;
     margin-left: 2rem;
 }
-.contact-info-logo{
+
+.contact-info-logo {
     margin-left: 2rem;
 }
+
 .img-footer {
     margin-right: 1rem;
     width: 18px;
@@ -357,14 +479,21 @@ footer i {}
 }
 
 
+@media (min-width: 1200px) {
+    .navbar-nav .nav-link:hover {
+        transform: scale(1.1);
+    }
+}
 
 @media (max-width: 1000px) {
     /* header {
         padding: var(--padding-sm);
     } */
-.testimonial{
-    padding: 0;
-}
+
+    .testimonial {
+        padding: 0;
+    }
+
     header img,
     footer img {
         width: 117px;
@@ -478,7 +607,7 @@ footer i {}
     z-index: 0;
     margin-bottom: 30px;
     background-color: #202A3C;
-     box-shadow: 2px 2px 20px 2px var(--primary-color-dark-blue-3);
+    box-shadow: 2px 2px 20px 2px var(--primary-color-dark-blue-3);
 }
 
 .pricing-table-5:after {
@@ -494,7 +623,7 @@ footer i {}
 }
 
 .pricing-table-5 .price-header .title {
-    color: #282828;
+    color: #FFF;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
@@ -533,9 +662,11 @@ footer i {}
 .pricing-table-5 .price-footer {
     margin-top: 40px;
 }
-.nav-link{
+
+.nav-link {
     color: #fff !important;
 }
+
 .pricing-table-5 .price-footer .order-btn {
     display: inline-block;
     width: 165px;
@@ -550,16 +681,16 @@ footer i {}
     font-weight: 600;
     position: relative;
     overflow: hidden;
-        border-radius: 25px;
-        background: linear-gradient(50deg,
+    border-radius: 25px;
+    background: linear-gradient(50deg,
             var(--accent-color-cyan),
             var(--accent-color-blue));
-        border: none;
-        font-family: var(--font-heading);
-        color: var(--neutral-color-white);
-        height: 3rem;
-        font-weight: 700;
-        padding: 0 12px;
+    border: none;
+    font-family: var(--font-heading);
+    color: var(--neutral-color-white);
+    height: 3rem;
+    font-weight: 700;
+    padding: 0 12px;
 }
 
 .pricing-table-5 .price-body ul {
